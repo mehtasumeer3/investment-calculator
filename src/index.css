@@ -78,6 +78,10 @@ body {
   color: #83e6c0;
 }
 
+input::placeholder {
+    color: #c2e9e0;
+}
+
 #result tbody {
   font-family: 'Roboto Condensed', sans-serif;
   font-size: 0.85rem;

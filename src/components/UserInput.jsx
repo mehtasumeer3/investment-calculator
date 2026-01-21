@@ -7,7 +7,8 @@ export default function UserInput({ onHandleChange, OnUserInput }) {
           <input
             type="number"
             required
-            value={OnUserInput.initialInvestment}
+            id="user-input-placeholder"
+            placeholder="0"
             onChange={(event) =>
               onHandleChange("initialInvestment", event.target.value)
             }
@@ -19,7 +20,9 @@ export default function UserInput({ onHandleChange, OnUserInput }) {
           <input
             type="number"
             required
-            value={OnUserInput.annualInvestment}
+
+            placeholder="0"
+            // value={OnUserInput.annualInvestment}
             onChange={(event) =>
               onHandleChange("annualInvestment", event.target.value)
             }
@@ -32,14 +35,15 @@ export default function UserInput({ onHandleChange, OnUserInput }) {
           <input
             type="number"
             required
-            value={OnUserInput.expectedReturn}
+            placeholder="0"
+            // value={OnUserInput.expectedReturn}
             onChange={(event) =>
               onHandleChange("expectedReturn", event.target.value)
             }
           />
         </p>
         <p>
-          <label>Duration</label>
+          <label>Duration (no. of years)</label>
           <input
             type="number"
             required
