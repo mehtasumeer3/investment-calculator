@@ -8,7 +8,7 @@ function App() {
     initialInvestment: 0,
     annualInvestment: 0,
     expectedReturn: 0,
-    duration: 1,
+    duration: 0,
   });
   const inputIsValid = userInput.duration >=1;
 
@@ -25,7 +25,7 @@ function App() {
     <>
       <Header />
       <UserInput onHandleChange={handleChange} OnUserInput={userInput} />
-      {inputIsValid ?<Results input={userInput} /> : alert("Enter a valid duration")}
+      {inputIsValid ?<Results input={userInput} /> : undefined}
     </>
   );
 }
